@@ -7,4 +7,4 @@ def register():
     username = input("Please create your username: ")
     while username_exists(username):
         username = input("This username is not available,try again: ")
-    os.environ.set("CONFAB_USERNAME")
+    os.environ["CONFAB_USERNAME"] = username
